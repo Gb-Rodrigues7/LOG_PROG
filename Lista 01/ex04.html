@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <script>
+        nome = prompt('Diga seu nome');
+        salario = Number.parseFloat(prompt('Informe o seu salário fixo'));
+        vendas = Number.parseFloat(prompt('Informe o número de vendas efetuadas no mês (em dinheiro)'));
+
+        document.write(`O seu salário fixo é   ${salario} </br>`);
+
+        var comissao = vendas * 0.15;
+
+        document.write('Sua comissão é ' + comissao);
+
+        var final = salario + comissao;
+
+        document.write(`Seu salário é ${salario} + ${comissao}'</br> Sendo assim, seu salário final é ${final}`)
+    </script>
+    
+</body>
+</html>

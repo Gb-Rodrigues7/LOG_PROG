@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>  
+    <script>
+        var nome= window.prompt('Informe seu nome');
+        var salário= Number.parseFloat(window.prompt('Informe seu salário fixo'));
+        var vendas= Number.parseFloat(window.prompt('Informe sua quantidade de vendas, em dinheiro, no mês'));
+
+        var lucro= vendas * 0.15;
+        var final= lucro + salário;
+
+        document.write(`Olá, ${nome}, Seu salário fixo é ${salário}</br>`)
+        document.write(`Ao somar seu salário fixo com seus lucros em vendas, temos ${salário} + ${lucro} = ${final}</br>`);
+    </script>
+</body>
+</html>
