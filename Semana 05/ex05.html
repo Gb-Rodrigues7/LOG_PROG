@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Exercício 05</title>
+        <script language="javascript" type="text/javascript">
+            function calcIMC(){
+                var sexo = document.getElementsByName("selecione")[0];
+                var h = document.getElementById("campo");
+                var display = document.getElementById("display");
+                    if(sexo.value=="M"){
+                        display.innerHTML = `O peso ideal é: ${((72.7*h.value)-58).toFixed(1)}.`;
+                        }
+                        else if (sexo.value=="F") {
+                            display.innerHTML = `O peso ideal é: ${((62.1*h.value)-44.7).toFixed(1)}.`;
+                        }
+                    }
+        </script>
+    </head>
+    <body>
+        Selecione o sexo:
+        <select name="selecione">
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+        <br>Digite sua altura:<input type="text" id="campo" size="5" />
+        <input type="button" value="calcular" onclick="calcIMC()" />
+        <br><p id="display"><i>Resultado</i></p>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Desafio 1</title>
+        <script language="javascript" type="text/javascript">
+            function mostarValor(){
+                var elemento = document.getElementById("campo1");
+                var display = document.getElementById("display");
+                if(elemento.value %2 == 0 ) {
+                    display.innerHTML = "O número é par!"
+                } else {
+                    display.innerHTML = "O número é ímpar!"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Digite um número:<input type="text" id="campo1" size="5" />
+        <input type="button" value="Revelar" onclick="mostarValor()" />
+        <br/><p id="display"><i>Número PAR ou IMPAR</i></p>
+    </body>
+</html>
