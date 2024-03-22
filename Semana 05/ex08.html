@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script language="javascript" type="text/javascript">
+            function mostarSituacao(){
+                var dia = parseInt(document.getElementById("dia").value);
+                var display = document.getElementById("display");
+                switch(dia) {
+                    case 1:
+                        display.innerHTML = "Domingo";
+                        break;
+                    case 2:
+                        display.innerHTML = "Segunda-Feira";
+                        break;
+                    case 3:
+                        display.innerHTML = "Terça-Feira";
+                        break;
+                    case 4:
+                        display.innerHTML = "Quarta-Feira";
+                        break;
+                    case 5:
+                        display.innerHTML = "Quinta-Feira";
+                        break;
+                    case 6:
+                        display.innerHTML = "Sexta-Feira";
+                        break;
+                    case 7:
+                        display.innerHTML = "Sábado";
+                        break;
+                    default:
+                        display.innerHTML = "Dia inválido";
+                        break;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Digite o número do dia: <input type="number" id="dia" size="4" />
+        <input type="button" value="Verificar" onclick="mostarSituacao()" />
+        <br/><p id="display"><i></i>
+        </p>
+        
+    </body>
+</html>

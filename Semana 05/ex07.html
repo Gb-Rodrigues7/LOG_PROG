@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voto</title>
+    <script>
+        function voto(){
+            var idade = document.getElementById("idade").value;
+            var display = document.getElementById("display");
+            if((idade > 15 && idade < 18) || idade > 70){
+                display.innerHTML = "O voto nesta faixa etária, é opcional!";
+            }
+            else if(idade < 16){
+                display.innerHTML = "O voto nesta faixa etária, é é proibido!";
+            }
+            else{
+                display.innerHTML = "Você é obrigado a votar!";
+            }
+        }
+     </script>
+</head>
+<body>
+    Digite sua idade: <input type="number" id="idade" size="4" />
+    <input type="button" value="voto" onclick="voto()" />
+    <br/><p id="display"><i>Situação da Votação</i>
+    </p>
+    
+</body>
+</html>
