@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Salário</title>
+        <script language="javascript" type="text/javascript">
+            function mostarSituacao(){
+                var salario = Number.parseFloat(document.getElementById("salario").value);
+                var display = document.getElementById("display");
+                var mensagem = "";
+                while (salario < 5000) {
+                    salario += 100;
+                    mensagem += "O salário ainda é R$" + salario + "<br/>";
+                }
+                display.innerHTML = mensagem;
+            }
+        </script>
+    </head>
+    <body>
+        Digite seu salário:<input type="text" id="salario" size="5" />
+        <input type="button" value="Mostrar" onclick="mostarSituacao()" />
+        <br/><p id="display"><i>Situação</i></p>
+    </body>
+</html>

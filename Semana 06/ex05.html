@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Números Pares</title>
+        <script language="javascript" type="text/javascript">
+            function mostarSituacao(){
+                var display = document.getElementById("display");
+                var mensagem = "";
+                for (contador=200; contador >= 0; contador --) {
+                    if (contador%2 == 0){
+                        mensagem += contador+"<br/>";
+                    }
+                }
+                display.innerHTML = mensagem;
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Mostrar" onclick="mostarSituacao()" />
+        <br/><p id="display" ><i>Situação</i></p>
+    </body>
+</html>
